@@ -17,6 +17,8 @@ namespace WebApplication2Test.Tests
         [TestMethod]
         public void ƒ†[ƒU[–¼‚ğæ“¾‚Å‚«‚é()
         {
+            //https://stackoverflow.com/questions/50896025/mocking-user-claimsprincipal-for-razor-pages-unit-test
+
             var httpContext = new DefaultHttpContext()
             {
                 User = new ClaimsPrincipal(new GenericIdentity("Akira"))
